@@ -77,4 +77,4 @@ C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\
 C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\net9.0\BlazorApp8.genruntimeconfig.cache
 C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\net9.0\ref\BlazorApp8.dll
 C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\net9.0\BlazorApp8.sourcelink.json
-C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\net9.0\compressed\fp1410aaod-6jseaz6nhe.gz
+C:\Users\user\Desktop\d khubulashvili\lessonOne\BlazorApp8\BlazorApp8\obj\Debug\net9.0\compressed\fp1410aaod-1yhrxydycl.gz

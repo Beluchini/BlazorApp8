@@ -5,34 +5,39 @@
 @inject AuthProvider AuthProvider
 <h3>Catalog</h3>
 
-<div>
-    <div>
+<div class="catalog">
+    <div class="catalog">
         <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Dog")">
-            <div>
+            <div class="catalog-child">
+                <img class="catalog-child" src="https://zooclub.ru/attach/8259.jpg"/>
                 Собака
             </div>
         </a>
     </div>
-    <div>
+    <div class="catalog">
         <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Cat")">
-            <div>
+            <div class="catalog-child">
+                <img class="catalog-child" src="https://images.wallpaperscraft.ru/image/single/kot_morda_seryj_56515_1600x1200.jpg"/>
                 Кот
             </div>
         </a>
     </div>
-    <div>
+    <div class="catalog">
         <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Bird")">
-            Птица
+            <div class="catalog-child">
+                <img class="catalog-child" src="https://avatars.mds.yandex.net/i?id=129486bfaef7f5456eea0f77c121465c_l-4340110-images-thumbs&n=13"/>
+                птица
+            </div>
         </a>
     </div>
-    <div>
+    <div class="catalog">
         <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Horse")">
             <div>
+                <img class="catalog-child" src="https://lastfm.freetls.fastly.net/i/u/ar0/8aa53bc7591d35139a4f87e51840ad2a.jpg"/>
                 Лошадь
             </div>
         </a>
     </div>
-
     <a class="button-style" href="http://localhost:5239/Registration" @onclick="() => AuthProvider.Logout()">Выйти</a>
 </div>
 @code {
