@@ -1,0 +1,30 @@
+﻿@page "/Registration"
+@using BlazorApp8.Models
+@using BlazorApp8.Service
+@using Microsoft.AspNetCore.Identity
+@inject AuthProvider AuthProvider
+@inject PermissionProvider PermissionProvider
+@rendermode InteractiveServer
+<h3>Registration</h3>
+
+<div>
+    <p>Имя</p>
+    <input type="text" @bind-value="AuthProvider.currentUser.Name" placeholder="Введите имя">
+    <p>Фамилия</p>
+    <input type="text" @bind-value="AuthProvider.currentUser.Surname" placeholder="Введите фамилию">
+    <p>Отчество</p>
+    <input type="text" @bind-value="AuthProvider.currentUser.Patronymic" placeholder="Введите отчество">
+    <p>Почта</p>
+    <input type="text" placeholder="Введите почту">
+    <p>Пароль</p>
+    <input type="password" placeholder="Введите пароль">
+    <p>Повторите пароль</p>
+    <input type="password" placeholder="Введите пароль">
+    <div></div>
+    <a class="button-style" href="http://localhost:5239/Catalog" @onclick="() => AuthProvider.Login(new Credentials())">Войти</a>
+</div>
+
+@code {
+    
+    
+}
