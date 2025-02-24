@@ -1,6 +1,8 @@
 ﻿@page "/Registration"
+@using BlazorApp8.Enums
 @using BlazorApp8.Models
 @using BlazorApp8.Service
+@using Microsoft.AspNetCore.Authorization.Infrastructure
 @using Microsoft.AspNetCore.Identity
 @inject AuthProvider AuthProvider
 @inject PermissionProvider PermissionProvider
@@ -9,22 +11,32 @@
 
 <div>
     <p>Имя</p>
-    <input type="text" @bind-value="AuthProvider.currentUser.Name" placeholder="Введите имя">
+    <input type="text" @bind-value="@name" placeholder="Введите имя">
     <p>Фамилия</p>
-    <input type="text" @bind-value="AuthProvider.currentUser.Surname" placeholder="Введите фамилию">
+    <input type="text" @bind-value="@surname" placeholder="Введите фамилию">
     <p>Отчество</p>
-    <input type="text" @bind-value="AuthProvider.currentUser.Patronymic" placeholder="Введите отчество">
+    <input type="text" @bind-value="@patronymic" placeholder="Введите отчество">
     <p>Почта</p>
-    <input type="text" placeholder="Введите почту">
+    <input type="text" placeholder="Введите почту" @bind-value="login">
     <p>Пароль</p>
-    <input type="password" placeholder="Введите пароль">
-    <p>Повторите пароль</p>
-    <input type="password" placeholder="Введите пароль">
-    <div></div>
-    <a class="button-style" href="http://localhost:5239/Catalog" @onclick="() => AuthProvider.Login(new Credentials())">Войти</a>
+    <input type="password" placeholder="Введите пароль" @bind-value="password" >
+    <p>Роль</p>
+    <select>
+        <option>@Roles.Admin</option>
+        <option>@Roles.User</option>
+    </select>
+    
+    <a class="button-style" href="http://localhost:5239/Catalog" @onclick="() => AuthProvider.Login(new Credentials(login, password), new User(name, surname, patronymic, role ))">Войти</a>
 </div>
 
 @code {
+    private string password;
+    private string login;
+    private string name;
+    private string surname;
+    private string patronymic;
+    private Roles role;
+    
     
     
 }

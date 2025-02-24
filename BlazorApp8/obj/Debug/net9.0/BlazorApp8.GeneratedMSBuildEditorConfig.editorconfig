@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Bird.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCaXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Cat.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Catalog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,12 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Dog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Horse.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb3JzZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/d khubulashvili/lessonOne/BlazorApp8/BlazorApp8/Components/Pages/Ljgin.razor]

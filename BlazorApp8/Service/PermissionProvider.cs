@@ -5,9 +5,9 @@ namespace BlazorApp8.Service;
 
 public class PermissionProvider
 {
-    public bool IsCanView(User user)
+    public bool IsCanView(Roles _role)
     {
-        if (user.Role == Roles.Admin)
+        if (_role == Roles.Admin)
         {
             return true;
         }

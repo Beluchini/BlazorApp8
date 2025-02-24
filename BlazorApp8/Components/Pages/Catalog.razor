@@ -1,6 +1,39 @@
 ﻿@page "/Catalog"
+@using BlazorApp8.Enums
+@using BlazorApp8.Models
+@using BlazorApp8.Service
+@inject AuthProvider AuthProvider
 <h3>Catalog</h3>
 
+<div>
+    <div>
+        <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Dog")">
+            <div>
+                Собака
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Cat")">
+            <div>
+                Кот
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Bird")">
+            Птица
+        </a>
+    </div>
+    <div>
+        <a href="@(AuthProvider.currentUser.Role is Roles.User ? "" : "http://localhost:5239/Horse")">
+            <div>
+                Лошадь
+            </div>
+        </a>
+    </div>
+
+    <a class="button-style" href="http://localhost:5239/Registration" @onclick="() => AuthProvider.Logout()">Выйти</a>
+</div>
 @code {
-    
 }

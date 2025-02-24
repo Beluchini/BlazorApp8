@@ -63,6 +63,7 @@ h1:focus {
     padding: 10px 15px;
     background: #03a7ff;
     border: 1px solid #000000;
+    border-radius: 25px;
     color: #333;
     text-decoration: none;
     text-align: center;

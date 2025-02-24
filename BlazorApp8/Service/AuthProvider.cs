@@ -7,7 +7,7 @@ public class AuthProvider
 {
     public User currentUser { get; private set; }
 
-    public void Login(Credentials credentials)
+    public void Login(Credentials credentials, User user)
     {
         if(string.IsNullOrEmpty(credentials.Login) || string.IsNullOrEmpty(credentials.Password))return;
         User newUeer = new User(credentials);
@@ -17,5 +17,10 @@ public class AuthProvider
     public void Logout()
     {
         currentUser = null;
+    }
+
+    public User GetCurrentUser()
+    {
+        return currentUser;
     }
 }

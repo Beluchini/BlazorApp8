@@ -20,7 +20,7 @@ public class User
         Role = role;
     }
 
-    public User(Credentials credentials) : this("None", "None", "None", credentials.Role)
+    public User(Credentials credentials) : this("None", "None", "None", Roles.None)
     {
         
     }
